@@ -1,0 +1,112 @@
+.mainCard{
+    border: 30px solid rgba(235, 106, 1, 0.897);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    border-radius: 16px;
+
+    background-image: url('https://images.radio.com/aiu-media/EmptyExhibit775x515-a7a2d41d-7d12-48ab-9fa9-2362f5ba8d55.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.historyTile{
+    overflow: auto;
+    border: 5px solid rgb(54, 56, 177);
+    height: 600px;
+    width: 25%;
+    flex-wrap: wrap;
+    margin-block: 7%;
+    background-image: url('https://i.pinimg.com/736x/b9/3f/30/b93f306c0f4ec3ddb830fb96aa274751--photo-backgrounds-background-images.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.mediumTile{
+    border: 5px solid rgb(54, 56, 177);
+    height: 600px;
+    width: 25%;
+    flex-wrap: wrap;
+    margin-block: 7%;
+    color: rgb(255, 255, 255);
+    background-image: url('https://images.unsplash.com/photo-1613746203812-717e6e5db3da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXJ0JTIwc3VwcGxpZXN8ZW58MHx8MHx8&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.imageTile{
+    height: 1000px;
+    overflow: auto;
+    align-items: center;
+    width: 50%;
+    
+    display: inline-grid;
+    justify-items: center;
+}
+.mediumInfo{
+    margin: 10%;
+}
+.historyInfo{
+    margin: 5%;
+    margin-left: 10%;
+}
+.topMenu{
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/1319855/pexels-photo-1319855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    height: 500px;
+    border: 20px solid mediumblue;
+    border-radius: 20px;
+}
+.allTopMenuItems{
+    padding: 10px;
+}
+.commentLikeForm{
+    display: flex;
+}
+.searchBar{
+    display: inline;
+    justify-content: center;
+}
+.searchBarDiv{
+    padding-top: 10%;
+    display: flex;
+    padding-left: 45%;
+}
+.fullSearchBar{
+    border: 10px solid;
+    border-radius: 20px;
+}
+.commentSection{
+    text-align: center;
+    padding-left: 30%;
+}
+.likeButton{
+    justify-content: right;
+    padding-left: 20%;
+}
+.commentList{
+    border: 10px outset gray;
+    border-top: 5px outset gray;
+    border-left: 5px outset gray;
+    
+}
+.commentInputBar{
+    border: 10px inset gray;
+    border-bottom: 5px inset gray;
+    border-right: 5px inset gray;
+    
+}
+.logoImage{
+    position: absolute;
+    block-size: 225px;
+    outline: groove;
+}
