@@ -160,7 +160,7 @@ function mainCardFill (externalAPIObject){
                             placeOfOrgin.remove()
                             classificationP.remove()
                         })
-                    }) 
+        }) 
         ///provenance_text
         //artist_display
         //dimensions
@@ -175,9 +175,10 @@ function mainCardFill (externalAPIObject){
         displayDateh2.textContent= "First Displayed In " + objectWithNeededData.date_display
         if (objectWithNeededData.exhibition_history === null){
             displayHistoryP.textContent= "No Info On History Of This Piece Please Try Again Later"
+        }else{ 
+            displayHistoryP.textContent = objectWithNeededData.exhibition_history
         }
-            else displayHistoryP.textContent = objectWithNeededData.exhibition_history
-
+            
         //appended all main card info to page elements are created earlier then secondary fill function so it overwrites after the first one
         mainCard.append(mediumTile,imageTile, historyTile)
         imageTile.append(mainTitle, imageOfMain, artistName)
@@ -268,8 +269,9 @@ function mainCardFill (externalAPIObject){
                 titleData.textContent=imgAndTitleData.data.title
                 if(imgID === null){
                     imgData.src = 'https://www.macewanfa.ca/public/uploads/images/noimageavailable/1537465439-330w_noimageavailable.jpg'
-                    }
-                    else imgData.src = `https://www.artic.edu/iiif/2/${imgAndTitleData.data.image_id}/full/200,/0/default.jpg`
+                }else{ 
+                    imgData.src = `https://www.artic.edu/iiif/2/${imgAndTitleData.data.image_id}/full/200,/0/default.jpg`
+                }
                 //console.log(imgAndTitleData.data.image_id)
                 // appending mini cards to top menu with click function built into each one as well as the fetch data for reuse in other functions
                 miniCard.append(titleData,imgData)
